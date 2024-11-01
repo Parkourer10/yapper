@@ -1,0 +1,12 @@
+{
+  "name": "creep-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "duckduckgo-search": "^1.0.7",
+    "got": "^14.4.3"
+  }
+}
