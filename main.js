@@ -108,17 +108,13 @@ RULES:
 . Remember last 10 messages only
 . Roast ONLY if user types "roast me". Roast really hard, harshly, and brutally. HURT THE USER EMOTIONALLY!.
     
-EXAMPLES:
-"2+2" → "4"
-"what is python" → "Programming language"
-"hello" → "Hi"`,
 };
 
 async function generateResponse(prompt, conversationHistory) {
     try {
         const response = await got.post(CONFIG.OLLAMA_API_URL, {
             json: {
-                model: 'mistral',
+                model: 'llama3.2:3b',
                 prompt: formatPrompt(prompt, conversationHistory),
                 stream: false,
             },
